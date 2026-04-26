@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "nyaya-env"
+version = "3.0.0"
+description = "Nyaya-Env: Scalable-Oversight Gym for Indian Bail Jurisprudence — Multi-Agent RL Environment"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "jaisogani-ai"},
+]
+keywords = [
+    "openenv", "reinforcement-learning", "multi-agent",
+    "indian-law", "bail-jurisprudence", "scalable-oversight",
+    "fleet-ai", "snorkel-ai", "halluminate",
+]
+dependencies = [
+    "openenv-core>=0.2.0",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "pyyaml",
+    "pydantic",
+    "fastapi",
+    "uvicorn",
+]
+
+[project.urls]
+Homepage = "https://github.com/jaisogani-ai/nyaya-env"
