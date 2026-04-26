@@ -1,0 +1,42 @@
+# ═══════════════════════════════════════════════════════
+# AI Justice Arena — Python Dependencies
+# ═══════════════════════════════════════════════════════
+# Minimal dependency set for 2 vCPU / 8GB RAM target.
+# All packages are production-tested and lightweight.
+# ═══════════════════════════════════════════════════════
+
+# OpenEnv framework (provides create_fastapi_app, Environment, etc.)
+openenv-core
+
+# ASGI server
+uvicorn[standard]
+
+# Web framework (used by openenv-core internally)
+fastapi
+
+# Data validation and serialization
+pydantic
+
+# LLM inference client (OpenAI-compatible API)
+openai
+
+# Numerical computing
+numpy
+
+# Graph generation for training curves
+matplotlib
+
+# HTTP client for AI Assistant HF API calls
+requests
+
+# CPU-compatible LLM for live Interactive RL Verifier demo
+torch
+transformers
+
+# Case File Data Pipeline
+pdfplumber
+pymupdf
+
+# Web UI / ChatInterface
+gradio
+
